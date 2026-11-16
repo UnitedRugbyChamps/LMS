@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f4f6f3;
+  --surface: #ffffff;
+  --surface-2: #eef2ec;
+  --ink: #142019;
+  --muted: #5b6b60;
+  --line: #d9e0d8;
+  --brand: #0f6b3a;
+  --brand-ink: #ffffff;
+  --accent: #d9a404;
+  --good: #1b8a4b;
+  --bad: #c2362f;
+  --warn: #b7791f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1410;
+    --surface: #152019;
+    --surface-2: #1c2a21;
+    --ink: #e8efe9;
+    --muted: #93a598;
+    --line: #2a3a2f;
+    --brand: #2fa864;
+    --brand-ink: #06140b;
+    --accent: #f2c230;
+    --good: #3cc174;
+    --bad: #ef6a62;
+    --warn: #e0a84a;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-accent: var(--accent);
+  --color-good: var(--good);
+  --color-bad: var(--bad);
+  --color-warn: var(--warn);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
